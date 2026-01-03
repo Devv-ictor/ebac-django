@@ -1,0 +1,45 @@
+# Database
+db.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+*.env
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Package builds
+*.egg-info/
+dist/
+build/
+
+# Django
+staticfiles/
+media/
