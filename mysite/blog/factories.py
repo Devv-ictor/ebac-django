@@ -13,12 +13,12 @@ class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = User
 
-    email = factory.Faker('safe_email')
+    email = factory.Faker("safe_email")
     username = factory.LazyAttribute(lambda x: faker.name())
 
     @classmethod
     def _prepare(cls, create, **kwargs):
-        password = kwargs.pop('password', None)
+        password = kwargs.pop("password", None)
         user = super(UserFactory, cls)._prepare(create, **kwargs)
         if password:
             user.set_password(password)
